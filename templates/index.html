@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Message Processor</title>
+  </head>
+  <body>
+    <h1>Message Processor</h1>
+    <form id="message-form">
+      <label for="message">Enter a message:</label>
+      <input type="text" id="message" name="message"><br><br>
+      <label for="preference">Select a preference:</label>
+      <select id="preference" name="preference">
+        <option value="uppercase">Uppercase</option>
+        <option value="lowercase">Lowercase</option>
+      </select><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <div id="output"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
